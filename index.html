@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Mil Coisas — Utilidades, presentes e muito mais</title>
+<meta name="description" content="Casa Mil Coisas: utilidades domésticas, papelaria, presentes e acessórios. Veja o catálogo e fale pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <!-- PERSONALIZAR: nome da loja -->
+    <a href="#topo" class="brand">Casa Mil Coisas</a>
+    <a class="btn-whatsapp" href="https://wa.me/5581999999999" target="_blank" rel="noopener">Falar no WhatsApp</a>
+  </div>
+</header>
+
+<main id="topo">
+
+  <section class="hero">
+    <p class="tagline">Tudo o que a casa precisa, num só lugar</p>
+    <h1>Utilidades, presentes e um tanto de bom gosto.</h1>
+    <p class="hero-desc">Da cozinha ao escritório, produtos escolhidos com cuidado para o dia a dia. <!-- PERSONALIZAR: descrição --></p>
+  </section>
+
+  <section class="catalog" id="catalogo">
+    <aside class="sidebar" id="sidebar">
+      <h2>Categorias</h2>
+      <ul id="categoryList">
+        <li><button class="cat-btn active" data-cat="todos">Todos os produtos</button></li>
+        <li><button class="cat-btn" data-cat="cozinha">Cozinha</button></li>
+        <li><button class="cat-btn" data-cat="decoracao">Decoração</button></li>
+        <li><button class="cat-btn" data-cat="papelaria">Papelaria</button></li>
+        <li><button class="cat-btn" data-cat="presentes">Presentes</button></li>
+      </ul>
+      <div class="sidebar-contact">
+        <p>Não achou o que precisa?</p>
+        <a href="https://wa.me/5581999999999" target="_blank" rel="noopener">Pergunte no WhatsApp</a>
+      </div>
+    </aside>
+
+    <div class="product-area">
+      <div class="area-head">
+        <h2 id="areaTitle">Todos os produtos</h2>
+        <span id="areaCount">12 produtos</span>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-cat="cozinha"><div class="thumb" aria-hidden="true"><span>Foto</span></div><span class="cat-chip">Cozinha</span><h3>Jogo de panelas antiaderente</h3><span class="price">R$ 189</span></article>
+        <article class="product-card" data-cat="cozinha"><div class="thumb" aria-hidden="true"><span>Foto</span></div><span class="cat-chip">Cozinha</span><h3>Conjunto de potes herméticos</h3><span class="price">R$ 59</span></article>
+        <article class="product-card" data-cat="cozinha"><div class="thumb" aria-hidden="true"><span>Foto</span></div><span class="cat-chip">Cozinha</span><h3>Liquidificador 3 velocidades</h3><span class="price">R$ 129</span></article>
+        <article class="product-card" data-cat="decoracao"><div class="thumb" aria-hidden="true"><span>Foto</span></div><span class="cat-chip">Decoração</span><h3>Vaso de cerâmica médio</h3><span class="price">R$ 45</span></article>
+        <article class="product-card" data-cat="decoracao"><div class="thumb" aria-hidden="true"><span>Foto</span></div><span class="cat-chip">Decoração</span><h3>Luminária de mesa</h3><span class="price">R$ 79</span></article>
+        <article class="product-card" data-cat="decoracao"><div class="thumb" aria-hidden="true"><span>Foto</span></div><span class="cat-chip">Decoração</span><h3>Quadro decorativo A3</h3><span class="price">R$ 39</span></article>
+        <article class="product-card" data-cat="papelaria"><div class="thumb" aria-hidden="true"><span>Foto</span></div><span class="cat-chip">Papelaria</span><h3>Caderno pautado 200 folhas</h3><span class="price">R$ 22</span></article>
+        <article class="product-card" data-cat="papelaria"><div class="thumb" aria-hidden="true"><span>Foto</span></div><span class="cat-chip">Papelaria</span><h3>Kit canetas coloridas</h3><span class="price">R$ 18</span></article>
+        <article class="product-card" data-cat="papelaria"><div class="thumb" aria-hidden="true"><span>Foto</span></div><span class="cat-chip">Papelaria</span><h3>Agenda 2027</h3><span class="price">R$ 35</span></article>
+        <article class="product-card" data-cat="presentes"><div class="thumb" aria-hidden="true"><span>Foto</span></div><span class="cat-chip">Presentes</span><h3>Caixa de chá especial</h3><span class="price">R$ 42</span></article>
+        <article class="product-card" data-cat="presentes"><div class="thumb" aria-hidden="true"><span>Foto</span></div><span class="cat-chip">Presentes</span><h3>Kit vela aromática</h3><span class="price">R$ 55</span></article>
+        <article class="product-card" data-cat="presentes"><div class="thumb" aria-hidden="true"><span>Foto</span></div><span class="cat-chip">Presentes</span><h3>Porta-retrato duplo</h3><span class="price">R$ 29</span></article>
+      </div>
+      <!-- PERSONALIZAR: edite/adicione produtos; data-cat controla a categoria -->
+    </div>
+  </section>
+
+  <section class="promo">
+    <div class="promo-box">
+      <h2>Frete combinado direto com você</h2>
+      <p>Compre pelo WhatsApp e combine entrega ou retirada na loja, sem burocracia. <!-- PERSONALIZAR --></p>
+      <a class="btn-whatsapp" href="https://wa.me/5581999999999" target="_blank" rel="noopener">Fazer um pedido</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contato">
+    <h2>Visite a loja</h2>
+    <ul class="info-list">
+      <li><strong>Endereço</strong> Rua do Sol, 145 — Casa Forte, Recife/PE</li>
+      <li><strong>Horário</strong> Seg a Sáb, 9h às 18h</li>
+      <li><strong>Telefone</strong> <a href="tel:+5581999999999">(81) 99999-9999</a></li>
+      <li><strong>Instagram</strong> <a href="https://instagram.com/" target="_blank" rel="noopener">@casamilcoisas</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Casa Mil Coisas</p>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/5581999999999" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WhatsApp</a>
+
+<script src="script.js"></script>
+</body>
+</html>

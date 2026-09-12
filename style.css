@@ -1,0 +1,108 @@
+/* =========================================================
+   MODELO 7 — LOJA DE VARIEDADES (estética organizada / versátil)
+   Paleta: creme + coral + teal-escuro
+   ========================================================= */
+
+:root{
+  --creme:#FAF7F2;
+  --branco:#fff;
+  --coral:#FF6F59;
+  --teal:#2F6F6B;
+  --teal-escuro:#204D4A;
+  --texto:#2B2620;
+  --cinza:#7A7369;
+  --linha:#E7E1D6;
+  --display:'Poppins', sans-serif;
+  --sans:'Karla', sans-serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--creme);color:var(--texto);font-family:var(--sans);line-height:1.6;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3{font-family:var(--display);margin:0 0 .3em;font-weight:600;}
+ul{list-style:none;margin:0;padding:0;}
+
+/* ---------- HEADER ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:var(--branco);border-bottom:1px solid var(--linha);}
+.header-inner{max-width:1240px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;}
+.brand{font-family:var(--display);font-size:1.3rem;font-weight:700;color:var(--teal-escuro);}
+.btn-whatsapp{background:var(--coral);color:#fff;padding:10px 20px;border-radius:6px;font-weight:600;font-size:.88rem;}
+.btn-whatsapp:hover{background:#e85b46;}
+
+/* ---------- HERO ---------- */
+.hero{max-width:1240px;margin:0 auto;padding:60px 24px 20px;text-align:center;}
+.tagline{color:var(--coral);font-weight:600;font-size:.9rem;margin:0 0 12px;}
+.hero h1{font-size:clamp(1.9rem,4vw,2.7rem);max-width:26ch;margin:0 auto 16px;color:var(--teal-escuro);}
+.hero-desc{max-width:50ch;margin:0 auto;color:var(--cinza);}
+
+/* ---------- CATALOG (sidebar + grid) ---------- */
+.catalog{max-width:1240px;margin:50px auto;padding:0 24px;display:grid;grid-template-columns:220px 1fr;gap:36px;align-items:start;}
+.sidebar{position:sticky;top:90px;}
+.sidebar h2{font-size:1rem;color:var(--teal-escuro);margin-bottom:14px;}
+.sidebar ul{display:flex;flex-direction:column;gap:6px;}
+.cat-btn{
+  width:100%;text-align:left;background:none;border:0;padding:10px 12px;border-radius:6px;
+  font-family:var(--sans);font-size:.92rem;color:var(--texto);cursor:pointer;
+}
+.cat-btn:hover{background:var(--linha);}
+.cat-btn.active{background:var(--teal);color:#fff;font-weight:600;}
+.sidebar-contact{
+  margin-top:28px;background:var(--branco);border:1px solid var(--linha);border-radius:10px;padding:18px;
+}
+.sidebar-contact p{margin:0 0 8px;font-size:.85rem;color:var(--cinza);}
+.sidebar-contact a{color:var(--coral);font-weight:600;text-decoration:underline;}
+
+.area-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:22px;}
+.area-head h2{font-size:1.4rem;color:var(--teal-escuro);}
+.area-head span{font-size:.85rem;color:var(--cinza);}
+
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.product-card{background:var(--branco);border:1px solid var(--linha);border-radius:10px;padding:16px;}
+.thumb{
+  aspect-ratio:1/1;border-radius:8px;background:linear-gradient(135deg,#eef0e8,#dfe6de);
+  display:flex;align-items:center;justify-content:center;color:#8b9186;font-size:.8rem;margin-bottom:12px;
+}
+.cat-chip{display:inline-block;background:#EAF2F1;color:var(--teal-escuro);font-size:.7rem;padding:3px 9px;border-radius:10px;font-weight:600;margin-bottom:8px;}
+.product-card h3{font-size:.95rem;font-weight:600;margin:0 0 10px;}
+.price{font-weight:700;color:var(--coral);}
+
+/* ---------- PROMO ---------- */
+.promo{background:var(--teal-escuro);padding:60px 24px;margin-top:70px;}
+.promo-box{max-width:700px;margin:0 auto;text-align:center;color:#fff;}
+.promo-box h2{font-size:1.7rem;}
+.promo-box p{color:#cfe3e0;margin:14px 0 24px;}
+.promo-box .btn-whatsapp{display:inline-block;}
+
+/* ---------- CONTACT ---------- */
+.contact{max-width:640px;margin:70px auto;padding:0 24px;text-align:center;}
+.contact h2{color:var(--teal-escuro);margin-bottom:22px;}
+.info-list{display:inline-block;text-align:left;}
+.info-list li{padding:10px 0;border-bottom:1px solid var(--linha);}
+.info-list strong{display:block;font-size:.72rem;text-transform:uppercase;color:var(--coral);letter-spacing:.03em;}
+.info-list a{text-decoration:underline;}
+
+/* ---------- FOOTER ---------- */
+.site-footer{text-align:center;padding:24px;font-size:.82rem;color:var(--cinza);}
+
+/* ---------- WHATSAPP FLOAT ---------- */
+.whatsapp-float{
+  position:fixed;bottom:20px;right:20px;z-index:60;background:var(--teal);color:#fff;
+  padding:14px 22px;border-radius:30px;font-weight:700;font-size:.85rem;box-shadow:0 6px 18px rgba(0,0,0,.2);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:900px){
+  .catalog{grid-template-columns:1fr;}
+  .sidebar{position:static;}
+  .sidebar ul{flex-direction:row;flex-wrap:wrap;}
+  .cat-btn{width:auto;}
+  .product-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width:640px){
+  .btn-whatsapp{padding:9px 14px;font-size:.8rem;}
+  .product-grid{grid-template-columns:1fr 1fr;}
+  .sidebar-contact{display:none;}
+}
+@media (max-width:420px){
+  .product-grid{grid-template-columns:1fr;}
+}
