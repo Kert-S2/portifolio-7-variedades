@@ -101,7 +101,7 @@ ul{list-style:none;margin:0;padding:0;}
 @media (max-width:640px){
   .btn-whatsapp{padding:9px 14px;font-size:.8rem;}
   .product-grid{grid-template-columns:1fr 1fr;}
-  .sidebar-contact{display:none;}
+  .sidebacontact{display:none;}
 }
 @media (max-width:420px){
   .product-grid{grid-template-columns:1fr;}
